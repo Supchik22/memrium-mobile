@@ -1,0 +1,30 @@
+[package]
+name = "memrium-mobile"
+version = "0.1.0"
+edition = "2021"
+description = "Memrium on the phone: a home screen launcher for Android drawn with chebrium."
+license = "MIT"
+repository = "https://github.com/Supchik22/memrium-mobile"
+
+# its own workspace: the Android build has its own lock file and target folder and never touches the desktop's
+[workspace]
+
+[lib]
+name = "memrium_mobile"
+crate-type = ["cdylib"]
+
+[dependencies]
+chebrium = { git = "https://github.com/Supchik22/chebrium", default-features = false, features = ["android"] }
+libc = "0.2"
+jni = "0.21"
+log = "0.4"
+# the Memrium theme's icons packed into the APK
+png = "0.17"
+
+[profile.release]
+opt-level = 3
+debug = false
+strip = true
+lto = "thin"
+codegen-units = 4
+panic = "abort"

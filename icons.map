@@ -1,0 +1,21 @@
+# Icons from the Memrium icon theme instead of the apps' own, packed into the APK by build.sh.
+# <Android package>  <icon name in the theme: $MEMRIUM_ICONS/256x256/apps/<name>.png>
+com.discord                                discord
+org.telegram.messenger                     telegram
+com.spotify.music                          com.spotify.Client
+com.valvesoftware.android.steam.community  steam
+com.viber.voip                             viber
+com.google.android.gm                      GMail-mail.google.com
+com.facebook.orca                          FacebookMessenger-facebook.com
+com.epicgames.portal                       ED2E_EpicGamesLauncher.0
+com.AmanitaDesign.Machinarium.EGS          machinarium
+com.miui.calculator                        accessories-calculator
+com.android.camera                         accessories-camera
+com.android.deskclock                      accessories-clock
+com.miui.notes                             accessories-notes
+com.android.settings                       preferences-system
+com.miui.compass                           compass
+com.google.android.calendar                org.gnome.Calendar
+com.google.android.apps.photos             org.gnome.Photos
+com.mi.android.globalFileexplorer          system-file-manager
+com.miui.securitycenter                    preferences-security

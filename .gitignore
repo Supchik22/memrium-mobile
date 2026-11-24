@@ -1,0 +1,4 @@
+/target
+/build
+# the signing key made on the first build stays on the machine that made it
+*.keystore
